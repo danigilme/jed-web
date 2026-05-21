@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jed — your website, email & domain. Handled.</title>
+<meta name="description" content="Jed is the friendly tech who gets your small business online. Website, email, and domain. Handled in minutes." />
+<meta name="theme-color" content="#0e0e12" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='22' width='100' height='100' fill='%23ff8a3d'/><text x='50' y='72' font-size='62' font-family='system-ui,sans-serif' font-weight='800' text-anchor='middle' fill='%230e0e12'>j</text></svg>" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg:#0e0e12;--fg:#f4f3ee;--mut:#a09e96;--accent:#ff8a3d}
+  html,body{height:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#1a1a22 0%,var(--bg) 60%);
+    color:var(--fg);min-height:100%;display:flex;flex-direction:column;
+    -webkit-font-smoothing:antialiased;line-height:1.5;
+  }
+  .wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:32px 22px;gap:26px}
+  .mark{font-size:clamp(64px,18vw,140px);font-weight:800;letter-spacing:-.04em;line-height:.9}
+  .mark span{color:var(--accent)}
+  .dot{color:var(--mut);font-weight:600}
+  h1{font-size:clamp(22px,5vw,34px);font-weight:650;max-width:18ch;letter-spacing:-.02em}
+  p.sub{color:var(--mut);font-size:clamp(15px,2.6vw,18px);max-width:42ch}
+  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a2a33;
+    border-radius:999px;padding:7px 14px;color:var(--mut);font-size:13px;font-weight:500}
+  .pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 0 rgba(255,138,61,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,138,61,.5)}70%{box-shadow:0 0 0 10px rgba(255,138,61,0)}100%{box-shadow:0 0 0 0 rgba(255,138,61,0)}}
+  a.cta{display:inline-block;background:var(--accent);color:#0e0e12;text-decoration:none;
+    font-weight:700;padding:14px 26px;border-radius:14px;font-size:16px;transition:transform .12s ease,filter .12s ease}
+  a.cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
+  footer{color:#56554f;font-size:13px;padding:22px;text-align:center}
+  footer a{color:#807e76;text-decoration:none}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="pill">Coming soon</div>
+    <div class="mark">jed<span>.</span></div>
+    <h1>Your website, email &amp; domain. Handled.</h1>
+    <p class="sub">Jed is the friendly tech who gets your small business online, so you can get back to the work you actually do.</p>
+    <a class="cta" href="mailto:hello@jed.so?subject=I want early access to Jed">Get early access</a>
+  </main>
+  <footer>&copy; 2026 Jed &middot; <a href="mailto:hello@jed.so">hello@jed.so</a></footer>
+</body>
+</html>
