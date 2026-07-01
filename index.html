@@ -1,49 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jed — your website, email & domain. Handled.</title>
-<meta name="description" content="Jed is the friendly tech who gets your small business online. Website, email, and domain. Handled in minutes." />
-<meta name="theme-color" content="#0e0e12" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='22' width='100' height='100' fill='%23ff8a3d'/><text x='50' y='72' font-size='62' font-family='system-ui,sans-serif' font-weight='800' text-anchor='middle' fill='%230e0e12'>j</text></svg>" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jed · Get found first. Get the call.</title>
+<meta name="description" content="When customers ask Google or ChatGPT for a local pro, be the one they call. Jed builds your site and gets you found — so you stop renting leads from Angi. Free 60-second scan.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='24' width='100' height='100' fill='%23f5a623'/%3E%3Cpath d='M76 24 60 76l-9-20-20-9z' fill='none' stroke='white' stroke-width='6' stroke-linejoin='round' stroke-linecap='round'/%3E%3Cpath d='M76 24 50 50' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta property="og:title" content="Jed · Get found first. Get the call.">
+<meta property="og:description" content="Be the pro Google and ChatGPT recommend. Stop renting leads from Angi. Free 60-second scan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jed.so">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  :root{--bg:#0e0e12;--fg:#f4f3ee;--mut:#a09e96;--accent:#ff8a3d}
-  html,body{height:100%}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-    background:radial-gradient(1200px 600px at 50% -10%,#1a1a22 0%,var(--bg) 60%);
-    color:var(--fg);min-height:100%;display:flex;flex-direction:column;
-    -webkit-font-smoothing:antialiased;line-height:1.5;
-  }
-  .wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:32px 22px;gap:26px}
-  .mark{font-size:clamp(64px,18vw,140px);font-weight:800;letter-spacing:-.04em;line-height:.9}
-  .mark span{color:var(--accent)}
-  .dot{color:var(--mut);font-weight:600}
-  h1{font-size:clamp(22px,5vw,34px);font-weight:650;max-width:18ch;letter-spacing:-.02em}
-  p.sub{color:var(--mut);font-size:clamp(15px,2.6vw,18px);max-width:42ch}
-  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a2a33;
-    border-radius:999px;padding:7px 14px;color:var(--mut);font-size:13px;font-weight:500}
-  .pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);
-    box-shadow:0 0 0 0 rgba(255,138,61,.6);animation:pulse 2s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,138,61,.5)}70%{box-shadow:0 0 0 10px rgba(255,138,61,0)}100%{box-shadow:0 0 0 0 rgba(255,138,61,0)}}
-  a.cta{display:inline-block;background:var(--accent);color:#0e0e12;text-decoration:none;
-    font-weight:700;padding:14px 26px;border-radius:14px;font-size:16px;transition:transform .12s ease,filter .12s ease}
-  a.cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
-  footer{color:#56554f;font-size:13px;padding:22px;text-align:center}
-  footer a{color:#807e76;text-decoration:none}
+:root{
+  --bg:#ffffff; --soft:#f3f8fd; --sky:#e9f2ff;
+  --ink:#0d1a2b; --ink2:#48586c; --ink3:#64748b;
+  --line:#e4ecf4; --blue:#1f6bff; --gold:#f5a623; --gold-d:#e0951a;
+  --green:#12b76a; --red:#e5533c; --maxw:1120px;
+  --shadow:0 14px 40px rgba(16,42,84,.10); --shadow-s:0 6px 20px rgba(16,42,84,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{letter-spacing:-.02em}
+svg{display:block}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;border-radius:11px;
+  padding:13px 20px;font-size:15px;cursor:pointer;border:none;
+  transition:filter .15s ease,transform .12s ease,box-shadow .15s ease,background .15s ease}
+.btn-gold{background:var(--gold);color:#3a2600}
+.btn-gold:hover{filter:brightness(1.04);box-shadow:0 12px 26px -12px rgba(245,166,35,.7);transform:translateY(-1px);text-decoration:none}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{background:var(--soft);border-color:#ccd8e6;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:20px}
+.brand .mk{width:26px;height:26px;color:var(--gold)}
+.navlinks{display:flex;gap:22px;align-items:center;font-size:15px;color:var(--ink2)}
+.navlinks a{color:var(--ink2)}
+.navlinks a:hover{color:var(--ink)}
+@media(max-width:680px){.navlinks a.txt{display:none}}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--sky),#f7fbff 68%,var(--bg));border-bottom:1px solid var(--line);padding:54px 0 62px}
+.herogrid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+@media(max-width:900px){.herogrid{grid-template-columns:1fr;gap:36px}}
+.pill{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--blue);
+  background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 11px;margin-bottom:18px;box-shadow:var(--shadow-s)}
+.pill .mk{width:15px;height:15px;color:var(--gold)}
+h1{font-size:clamp(35px,5.3vw,57px);line-height:1.02;margin:0 0 18px;font-weight:800}
+h1 .u{color:var(--blue)}
+.lead{font-size:19px;color:var(--ink2);max-width:540px;margin:0 0 24px}
+.lead b{color:var(--ink)}
+.hook{background:#fff;border:1px solid var(--line);border-radius:14px;padding:7px 7px 7px 14px;display:flex;gap:8px;align-items:center;max-width:530px;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+.hook:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,166,35,.15)}
+.hook .pin{width:18px;height:18px;color:var(--gold);flex:none}
+.hook input{flex:1;border:none;outline:none;font-size:16px;color:var(--ink);min-width:0;background:transparent}
+.hook input::placeholder{color:var(--ink3)}
+.hook .btn{white-space:nowrap}
+@media(max-width:560px){.hook{flex-wrap:wrap;padding:11px}.hook input{flex-basis:100%;padding:10px 4px;order:1}.hook .pin{order:0}.hook .btn{flex-basis:100%;order:2}}
+.reassure{display:flex;gap:14px;flex-wrap:wrap;margin:13px 2px 0;font-size:14px;color:var(--ink2);font-weight:600}
+.reassure span{display:inline-flex;align-items:center;gap:5px}
+.reassure .ck{color:var(--green);font-weight:800}
+
+/* AI answer card */
+.aicard{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;max-width:420px;margin:0 auto}
+.aicard .top{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink3);font-weight:600}
+.aicard .dot{width:9px;height:9px;border-radius:50%;background:var(--green)}
+.aicard .q{padding:16px 18px 4px;font-size:15px;color:var(--ink);font-weight:600}
+.aicard .ans{padding:6px 18px 16px}
+.aicard .row{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+.aicard .row:last-child{border-bottom:none}
+.aicard .rk{width:22px;height:22px;border-radius:6px;background:var(--soft);color:var(--ink2);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.aicard .nm{flex:1;font-size:14.5px;font-weight:600}
+.aicard .st{font-size:12.5px;color:var(--ink3);display:inline-flex;align-items:center;gap:4px}
+.aicard .st svg{width:14px;height:14px;color:var(--gold)}
+.aicard .you{background:#fff2ef;margin:6px -18px -16px;padding:13px 18px;border-top:1px solid #f6d5cd;display:flex;align-items:center;gap:10px}
+.aicard .you .rk{background:#fde0d9;color:var(--red)}
+.aicard .you .nm{color:var(--red)}
+.aicard .you .st{color:var(--red);font-weight:600}
+.aicap{text-align:center;font-size:13.5px;color:var(--ink2);margin-top:14px;font-weight:600}
+
+/* proof */
+.proof{background:#fff;border-bottom:1px solid var(--line);padding:18px 0}
+.proofin{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;color:var(--ink2);font-size:14.5px}
+.stars{color:var(--gold);letter-spacing:2px;font-size:15px}
+.avatars{display:flex}
+.avatars i{width:30px;height:30px;border-radius:50%;border:2px solid #fff;margin-left:-8px;display:block;background:linear-gradient(135deg,#8ab6ff,#1f6bff)}
+.avatars i:first-child{margin-left:0}
+.proofin b{color:var(--ink)}
+
+/* sections */
+section{padding:68px 0}
+.kicker{text-align:center;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:12px}
+.h2{font-size:clamp(27px,3.6vw,40px);font-weight:800;text-align:center;max-width:740px;margin:0 auto 14px;line-height:1.12}
+.sub{color:var(--ink2);text-align:center;max-width:600px;margin:0 auto 40px;font-size:17.5px}
+.soft{background:var(--soft)}
+
+/* icon chip */
+.ic{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;
+  background:rgba(31,107,255,.08);border:1px solid rgba(31,107,255,.15);margin-bottom:12px}
+.ic svg{width:22px;height:22px;color:var(--blue)}
+.ic.warn{background:rgba(229,83,60,.08);border-color:rgba(229,83,60,.18)}
+.ic.warn svg{color:var(--red)}
+
+/* problem */
+.prob{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:860px;margin:0 auto}
+@media(max-width:720px){.prob{grid-template-columns:1fr}}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;box-shadow:var(--shadow-s)}
+.pcard h3{margin:0 0 8px;font-size:19px;line-height:1.25}
+.pcard p{margin:0;color:var(--ink2);font-size:15.5px}
+.billboard{text-align:center;max-width:640px;margin:34px auto 0;font-size:20px;font-weight:700;color:var(--ink);line-height:1.4}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:980px;margin:0 auto}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 24px;box-shadow:var(--shadow-s)}
+.step .n{display:inline-flex;width:36px;height:36px;border-radius:10px;background:var(--sky);color:var(--blue);font-weight:800;align-items:center;justify-content:center;font-size:16px}
+.step h3{margin:14px 0 8px;font-size:19px;line-height:1.25}
+.step p{margin:0;color:var(--ink2);font-size:15px}
+.step .free{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;color:var(--green);background:#e7f8f0;border-radius:999px;padding:3px 10px}
+
+/* features */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:0 auto}
+@media(max-width:820px){.feat{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.feat{grid-template-columns:1fr}}
+.f{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow-s)}
+.f h4{margin:0 0 6px;font-size:16px;line-height:1.25}
+.f p{margin:0;color:var(--ink2);font-size:14px}
+
+/* testimonials */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:0 auto}
+@media(max-width:820px){.tgrid{grid-template-columns:1fr}}
+.t{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow-s)}
+.t p{font-size:15.5px;color:var(--ink);margin:12px 0 16px}
+.t .who{display:flex;align-items:center;gap:10px}
+.t .who i{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#ffd07a,#f5a623);display:flex;align-items:center;justify-content:center;color:#5a3d00;font-weight:800;font-size:15px;font-style:normal;flex:none}
+.t .who b{display:block;font-size:14px}
+.t .who span{font-size:13px;color:var(--ink3)}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1000px;margin:0 auto}
+@media(max-width:840px){.plans{grid-template-columns:1fr}}
+.plan{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;display:flex;flex-direction:column;box-shadow:var(--shadow-s);position:relative}
+.plan.hi{border:2px solid var(--gold);box-shadow:var(--shadow)}
+@media(min-width:841px){.plan.hi{transform:translateY(-8px)}}
+.pop{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#3a2600;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:5px 13px;border-radius:999px;white-space:nowrap}
+.plan .pn{font-size:20px;font-weight:800}
+.plan .pt{color:var(--ink3);font-size:14px;margin:2px 0 16px}
+.plan .amt{font-size:42px;font-weight:800;line-height:1}.plan .amt small{font-size:15px;color:var(--ink3);font-weight:600}
+.plan ul{list-style:none;margin:16px 0 20px;padding:0;flex:1}
+.plan li{position:relative;padding:8px 0 8px 26px;font-size:14.5px;color:var(--ink);border-bottom:1px solid var(--line)}
+.plan li:last-child{border-bottom:none}
+.plan li::before{content:"";position:absolute;left:0;top:12px;width:15px;height:11px;
+  background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2312b76a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E")}
+.guarantee{text-align:center;margin:26px auto 0;color:var(--ink2);font-size:14.5px}
+.guarantee b{color:var(--ink)}
+.addline{text-align:center;color:var(--ink3);font-size:13.5px;margin-top:8px}
+.addline b{color:var(--ink2)}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:2px 20px;margin-bottom:12px;box-shadow:var(--shadow-s)}
+summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--blue);font-size:22px;font-weight:700;flex:none}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 16px;color:var(--ink2);font-size:15px}
+
+/* final */
+.final{background:linear-gradient(180deg,#fff,var(--sky));text-align:center}
+.final .hook{margin:26px auto 0}
+.final .reassure{justify-content:center}
+
+/* sticky mobile cta */
+.sticky{display:none}
+@media(max-width:680px){
+  .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);
+    backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px}
+  .sticky .btn{width:100%}
+  body{padding-bottom:72px}
+}
+
+footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--ink3);font-size:13.5px;text-align:center}
+footer .brand{display:inline-flex;font-size:16px}
 </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="pill">Coming soon</div>
-    <div class="mark">jed<span>.</span></div>
-    <h1>Your website, email &amp; domain. Handled.</h1>
-    <p class="sub">Jed is the friendly tech who gets your small business online, so you can get back to the work you actually do.</p>
-    <a class="cta" href="mailto:hello@jed.so?subject=I want early access to Jed">Get early access</a>
-  </main>
-  <footer>&copy; 2026 Jed &middot; <a href="mailto:hello@jed.so">hello@jed.so</a></footer>
+
+<nav><div class="wrap navin">
+  <div class="brand">
+    <svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+    Jed
+  </div>
+  <div class="navlinks">
+    <a href="#how" class="txt">How it works</a>
+    <a href="#reviews" class="txt">Reviews</a>
+    <a href="#pricing" class="txt">Pricing</a>
+    <a href="#top" class="btn btn-gold">Scan my business — free</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="wrap herogrid">
+    <div>
+      <span class="pill">
+        <svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        Jed · get found on Google &amp; ChatGPT
+      </span>
+      <h1>Get found first.<br><span class="u">Get the call.</span></h1>
+      <p class="lead">Customers now search Google and ask ChatGPT for a local pro, and call whoever comes up first. Jed makes that <b>you</b>, so you stop renting leads from Angi and the phone rings on its own.</p>
+      <div class="hook">
+        <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <input placeholder="Paste your Google Maps link or business name..." aria-label="Your Google Maps link or business name" />
+        <button class="btn btn-gold">Scan my business — free →</button>
+      </div>
+      <div class="reassure">
+        <span><span class="ck">✓</span> 60 seconds</span>
+        <span><span class="ck">✓</span> No signup</span>
+        <span><span class="ck">✓</span> No card</span>
+        <span><span class="ck">✓</span> See your rank</span>
+      </div>
+      <p style="font-size:13.5px;color:var(--ink3);margin:10px 2px 0">No link handy? Just type your business name and city — Jed will find you.</p>
+    </div>
+    <div>
+      <div class="aicard">
+        <div class="top"><span class="dot"></span> Customer asking their phone</div>
+        <div class="q">"Who's the best plumber near me in Miami?"</div>
+        <div class="ans">
+          <div class="row"><span class="rk">1</span><span class="nm">Ace Plumbing Miami</span><span class="st"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>4.9</span></div>
+          <div class="row"><span class="rk">2</span><span class="nm">Rapid Drain Co</span><span class="st"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>4.7</span></div>
+          <div class="row"><span class="rk">3</span><span class="nm">Miami Flow Plumbers</span><span class="st"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>4.8</span></div>
+          <div class="you"><span class="rk">✕</span><span class="nm">Your business</span><span class="st">Not mentioned</span></div>
+        </div>
+      </div>
+      <div class="aicap">This is what your customers see today. Jed gets you on the list.</div>
+    </div>
+  </div>
+</header>
+
+<div class="proof"><div class="wrap proofin">
+  <span class="avatars"><i></i><i></i><i></i><i></i></span>
+  <span class="stars">★★★★★</span>
+  <span>Loved by <b>300+ local pros</b> — plumbers, electricians, HVAC &amp; more</span>
+</div></div>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">The problem</div>
+    <h2 class="h2">You're paying for customers twice.</h2>
+    <p class="sub">Once to Angi and Thumbtack for leads you don't own, and again by being invisible the moment someone asks their phone for a pro.</p>
+    <div class="prob">
+      <div class="pcard">
+        <div class="ic warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+        <h3>Renting leads from Angi</h3><p>You pay for every lead, share it with 4 other pros, and chase people who never call back. It never stops, and it's never yours.</p>
+      </div>
+      <div class="pcard">
+        <div class="ic warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.4 10.4 0 0 1 12 5c7 0 10 7 10 7a13.2 13.2 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.5 13.5 0 0 0 2 12s3 7 10 7a9.7 9.7 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/></svg></div>
+        <h3>Invisible when it counts</h3><p>People ask Google and ChatGPT "best plumber near me" and call the first name they get. If that's not you, the job goes to someone else.</p>
+      </div>
+    </div>
+    <p class="billboard">A great website nobody can find is a billboard in the desert.</p>
+  </div>
+</section>
+
+<section class="soft" id="how">
+  <div class="wrap">
+    <div class="kicker">How it works</div>
+    <h2 class="h2">Three steps. Then Jed does the work.</h2>
+    <p class="sub">You run the business. Jed is the copilot that gets you found and keeps the calls coming.</p>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h3>Scan your business</h3><p>Paste your Google Maps link. In 60 seconds Jed shows you exactly where you show up when customers search, and who's beating you.</p><span class="free">Free · nothing changes yet</span></div>
+      <div class="step"><span class="n">2</span><h3>See where you stand</h3><p>Get a plain-English report: are you the first name customers get, or invisible? No jargon, just where you rank and why.</p></div>
+      <div class="step"><span class="n">3</span><h3>Jed puts you on top</h3><p>Say the word and Jed builds your site, gets you found on Google and ChatGPT, and keeps you there every month, on autopilot.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">What you get</div>
+    <h2 class="h2">Everything that gets you found. One price.</h2>
+    <p class="sub">No agency retainers. No five apps to juggle. Jed handles all of it, from your phone.</p>
+    <div class="feat">
+      <div class="f"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20"/></svg></div><h4>A website that's yours</h4><p>Clean, fast, built in 60 seconds from your phone, on your own domain.</p></div>
+      <div class="f"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div><h4>Your own email</h4><p>you@yourbusiness.com from day one. Looks pro, builds trust.</p></div>
+      <div class="f"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h4>Found on Google &amp; ChatGPT</h4><p>Jed does the work every month so your name is the one customers get.</p></div>
+      <div class="f"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div><h4>More 5-star reviews</h4><p>Jed asks your happy customers for reviews, so you look like the obvious choice.</p></div>
+      <div class="f"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 7 13.5 15.5l-5-5L2 17"/><path d="M16 7h6v6"/></svg></div><h4>A simple monthly report</h4><p>See where you show up and how you compare to the other guys in town.</p></div>
+      <div class="f"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.09 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><h4>Calls that are yours</h4><p>Customers call you directly. No shared leads, no middleman, no Angi fees.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="reviews">
+  <div class="wrap">
+    <div class="kicker">Real pros, real jobs</div>
+    <h2 class="h2">Pros who stopped paying for leads.</h2>
+    <p class="sub">And started getting calls that are actually theirs.</p>
+    <div class="tgrid">
+      <div class="t"><div class="stars">★★★★★</div><p>"I cancelled Angi. Now when people ask their phone for a plumber in Tampa, I'm the first name. Six new jobs last month."</p><div class="who"><i>M</i><div><b>Mike R.</b><span>Plumber · Tampa, FL<span style="color:var(--green);font-weight:700"> · Verified</span></span></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><p>"Set it up from my truck in 10 minutes. My phone actually rings now, and I'm not splitting leads with four other guys."</p><div class="who"><i>C</i><div><b>Carlos M.</b><span>Electrician · Phoenix, AZ<span style="color:var(--green);font-weight:700"> · Verified</span></span></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><p>"I'm not techy at all. Jed did everything. Went from invisible to top of the list on Google in a few weeks."</p><div class="who"><i>D</i><div><b>Dave T.</b><span>HVAC · Dallas, TX<span style="color:var(--green);font-weight:700"> · Verified</span></span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="kicker">Pricing</div>
+    <h2 class="h2">Simple monthly plans. Cancel anytime.</h2>
+    <p class="sub">Less than one service call a month. No contracts, no setup fee, no agency retainer.</p>
+    <div class="plans">
+      <div class="plan">
+        <div class="pn">Takeoff</div><div class="pt">Get online and findable.</div>
+        <div class="amt">$20<small>/mo</small></div>
+        <ul>
+          <li>Website built from your phone in 60s</li>
+          <li>Your own domain + branded email</li>
+          <li>Set up so Google &amp; AI can find you</li>
+          <li>Monthly report</li>
+          <li>Cancel anytime — it's all yours to keep</li>
+        </ul>
+        <a href="#top" class="btn btn-ghost">Start</a>
+      </div>
+      <div class="plan hi">
+        <span class="pop">Most popular</span>
+        <div class="pn">Climb</div><div class="pt">Show up first when customers search.</div>
+        <div class="amt">$100<small>/mo</small></div>
+        <ul>
+          <li>Everything in Takeoff</li>
+          <li>Jed works every month: new pages + weekly posts</li>
+          <li>More 5-star reviews, handled for you</li>
+          <li>See where you rank on 20 real customer searches</li>
+        </ul>
+        <a href="#top" class="btn btn-gold">Start getting calls</a>
+      </div>
+      <div class="plan">
+        <div class="pn">First Class</div><div class="pt">Own your whole area.</div>
+        <div class="amt">$200<small>/mo</small></div>
+        <ul>
+          <li>Everything in Climb, doubled</li>
+          <li>Every service you offer, every neighborhood</li>
+          <li>We watch your competitors and respond</li>
+          <li>Priority + paid ads run for you</li>
+        </ul>
+        <a href="#top" class="btn btn-ghost">Own my area</a>
+      </div>
+    </div>
+    <p class="guarantee"><b>30-day money-back guarantee.</b> Try it. If your phone doesn't ring more, get a full refund.</p>
+    <p class="addline">Add on any plan: <b>Real inbox +$10/mo</b> · <b>Call tracking +$15/mo</b> · <b>Paid ads</b> (we run them for you)</p>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <div class="kicker">Straight answers</div>
+    <h2 class="h2">Questions pros ask us.</h2>
+    <div class="faq">
+      <details open><summary>I already have a website and Google. Why this?</summary><p>Having a website isn't the same as being found. Jed makes sure you're the name customers actually get when they search Google or ask ChatGPT, and keeps you there. If you already have a domain, you keep it.</p></details>
+      <details><summary>Do I need to be techy?</summary><p>Not at all. You paste your Google Maps link and Jed does the rest, all from your phone. Most pros are set up in about 10 minutes.</p></details>
+      <details><summary>How is this different from an SEO agency or Angi?</summary><p>No $1,500 retainers and no renting leads you share with four other pros. One simple monthly price, the calls come straight to you, and everything (your site, your domain, your reviews) is yours to keep.</p></details>
+      <details><summary>Does AI really send customers to local businesses?</summary><p>Yes, and it's growing fast. More people ask their phone "who's the best plumber near me" every month and call the first name they get. The free scan shows you exactly where you stand today.</p></details>
+      <details><summary>What does the free scan actually do?</summary><p>It shows you where you show up when customers search, and who's beating you. It doesn't change anything or charge you a cent. You only build if you want to.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="kicker">Find out in 60 seconds</div>
+    <h2 class="h2">Are customers finding you, or your competitor?</h2>
+    <p class="sub">Paste your Google Maps link and see where you show up today. Free, no card.</p>
+    <div class="hook">
+      <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <input placeholder="Paste your Google Maps link..." aria-label="Your Google Maps link" />
+      <button class="btn btn-gold">Scan my business — free →</button>
+    </div>
+    <div class="reassure">
+      <span><span class="ck">✓</span> 60 seconds</span>
+      <span><span class="ck">✓</span> No signup</span>
+      <span><span class="ck">✓</span> No card</span>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <span class="brand"><svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Jed</span> · Get found on Google &amp; ChatGPT · jed.so
+  <div style="margin-top:10px">© 2026 Jed · Privacy · Terms · hello@jed.so</div>
+</div></footer>
+
+<div class="sticky"><a href="#top" class="btn btn-gold">Scan my business — free · 60s →</a></div>
+
 </body>
 </html>
