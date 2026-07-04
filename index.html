@@ -18,6 +18,12 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://jed.so/img/og.jpg?v=4">
+<link rel="preload" as="image" href="img/ai-google.png">
+<link rel="preload" as="image" href="img/ai-google-maps.png">
+<link rel="preload" as="image" href="img/ai-chatgpt.png">
+<link rel="preload" as="image" href="img/ai-gemini.png">
+<link rel="preload" as="image" href="img/ai-claude.png">
+<link rel="preload" as="image" href="img/ai-perplexity.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -113,6 +119,7 @@ p{margin:0}
 .float-card .small{font-size:11px;font-weight:500;color:var(--muted)}
 .fc1{left:-20px;top:26px;transform:rotate(-7deg)}
 .fc1 .dial{font-size:24px;font-weight:800;color:var(--green);font-family:var(--font-head)}
+.fc1 .spark{width:132px;height:41px;display:block;margin:7px 0 5px}
 .fc2{left:-60px;top:248px;transform:rotate(6deg)}
 .fc3{right:-20px;top:18px;transform:rotate(6deg)}
 .fc4{right:-52px;top:238px;transform:rotate(-5deg)}
@@ -495,6 +502,12 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
   <div class="float-card fc1">
     <div class="small">Site health</div>
     <div class="dial">97%</div>
+    <svg class="spark" viewBox="0 0 128 40" aria-hidden="true">
+      <defs><linearGradient id="sparkg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16a34a" stop-opacity=".22"/><stop offset="1" stop-color="#16a34a" stop-opacity="0"/></linearGradient></defs>
+      <path d="M3 33 L18 29 L33 30.5 L48 24 L63 26 L78 17 L93 19 L108 10 L121 7 V40 H3 Z" fill="url(#sparkg)"/>
+      <path d="M3 33 L18 29 L33 30.5 L48 24 L63 26 L78 17 L93 19 L108 10 L121 7" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="121" cy="7" r="3.2" fill="#16a34a"/>
+    </svg>
     <div class="small">Loads in 0.8s</div>
   </div>
   <div class="float-card fc2">
