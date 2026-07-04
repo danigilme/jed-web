@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jed · Make Your Phone Ring on Auto-Pilot</title>
+<title>Jed · Get Customers on Autopilot</title>
 <meta name="description" content="Jed is the iPhone app that builds your website from your Google Maps listing, then gets you found on Google, Maps & ChatGPT. Daily local SEO on autopilot, run entirely from your phone.">
 <meta name="theme-color" content="#2b5cff">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='24' width='100' height='100' fill='%232b5cff'/%3E%3Cpath d='M18 78 82 50 18 22l0 20 44 8-44 8z' fill='white'/%3E%3C/svg%3E">
-<meta property="og:title" content="Jed · Make Your Phone Ring on Auto-Pilot">
+<meta property="og:title" content="Jed · Get Customers on Autopilot">
 <meta property="og:description" content="The iPhone app that builds your website and runs your local SEO daily. Get found on Google, Maps & ChatGPT. No per-lead fees, ever.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jed.so">
@@ -82,33 +82,40 @@ p{margin:0}
 .mobile-menu.open{display:flex}
 
 /* ---------- hero ---------- */
-.hero{position:relative;padding:170px 0 64px;overflow:hidden;background:
+.hero{position:relative;padding:204px 0 72px;overflow:hidden;background:
   radial-gradient(1000px 500px at 50% -80px,var(--blue-tint) 0%,rgba(239,243,255,0) 60%),#fff}
 .hero .grid-bg{position:absolute;inset:0;pointer-events:none;
   background-image:linear-gradient(rgba(13,13,18,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(13,13,18,.045) 1px,transparent 1px);
   background-size:64px 64px;
   -webkit-mask-image:radial-gradient(900px 620px at 50% 160px,#000 30%,transparent 75%);
   mask-image:radial-gradient(900px 620px at 50% 160px,#000 30%,transparent 75%)}
+.hero .wrap{position:relative}
 .hero-inner{position:relative;text-align:center;max-width:900px;margin:0 auto}
 .hero h1{margin:0 auto}
 .apl{width:18px;height:18px;flex:none;margin-top:-2px}
 .ico{width:16px;height:16px;flex:none}
+.ichip{width:38px;height:38px;border-radius:11px;background:var(--blue-tint);color:var(--blue);
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.ichip svg{width:18px;height:18px}
+.h3ic{display:inline-flex;width:27px;height:27px;border-radius:7px;background:#0d0d12;color:#fff;
+  align-items:center;justify-content:center;vertical-align:-4px;margin:0 2px}
+.h3ic svg{width:16px;height:16px}
 .hero .sub{max-width:564px;margin:22px auto 0}
 .hero-ctas{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
 .hero-note{margin-top:18px;font-size:14px;color:var(--muted)}
 .float-card{position:absolute;background:#fff;border:1px solid var(--line-soft);border-radius:14px;
   box-shadow:var(--shadow-pop);padding:14px 16px;font-size:13px;font-weight:600;color:var(--ink);z-index:2}
 .float-card .small{font-size:11px;font-weight:500;color:var(--muted)}
-.fc1{left:4%;top:180px;transform:rotate(-7deg)}
+.fc1{left:-20px;top:26px;transform:rotate(-7deg)}
 .fc1 .dial{font-size:24px;font-weight:800;color:var(--green);font-family:var(--font-head)}
-.fc2{left:1%;top:390px;transform:rotate(6deg)}
-.fc3{right:3%;top:170px;transform:rotate(6deg)}
-.fc4{right:1.5%;top:360px;transform:rotate(-5deg)}
+.fc2{left:-60px;top:248px;transform:rotate(6deg)}
+.fc3{right:-20px;top:18px;transform:rotate(6deg)}
+.fc4{right:-52px;top:238px;transform:rotate(-5deg)}
 .fc4 .pill{display:inline-block;background:var(--blue-tint);color:var(--blue);border-radius:6px;padding:2px 7px;font-size:11px;font-weight:700;margin-top:6px}
 .fc-dot{display:inline-block;width:8px;height:8px;border-radius:99px;background:var(--green);margin-right:6px}
 
 /* ---------- demo card ---------- */
-.demo{padding:26px 0 0}
+.demo{padding:72px 0 0}
 .demo-card{position:relative;border-radius:var(--r-big);overflow:hidden;color:#fff;
   background:linear-gradient(140deg,#0d0d12 0%,#101a3c 55%,var(--blue-d) 130%);
   padding:56px 56px 48px;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
@@ -158,6 +165,8 @@ p{margin:0}
 /* ---------- compare ---------- */
 .cmp-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:stretch}
 .cmp{background:#fff;border:1px solid var(--line);border-radius:var(--r-big);padding:34px 32px;display:flex;flex-direction:column}
+.cmp .alt-tag{font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.cmp.jed .alt-tag{color:rgba(255,255,255,.8)}
 .cmp .cname{font-family:var(--font-head);font-weight:800;font-size:19px}
 .cmp .csub{display:block;font-family:var(--font-body);font-weight:500;font-size:13.5px;color:var(--muted);margin-top:4px}
 .cmp .cprice{font-family:var(--font-head);font-weight:800;font-size:46px;letter-spacing:-1.5px;margin:24px 0 2px;color:var(--red)}
@@ -178,12 +187,43 @@ p{margin:0}
 .chk{flex:none;width:22px;height:22px;border-radius:99px;border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;margin-top:1px}
 .chk svg{width:11px;height:11px}
 
-/* ---------- platforms ---------- */
-.plat-row{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-bottom:28px}
-.plat{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-card);
-  display:flex;flex-direction:column;align-items:center;gap:12px;padding:26px 30px;min-width:150px}
-.plat svg{width:34px;height:34px}
-.plat span{font-weight:600;font-size:14.5px;color:var(--ink)}
+/* ---------- app marquee ---------- */
+.marq{overflow:hidden;position:relative;padding:10px 0;margin-bottom:32px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marq-track{display:flex;width:max-content;animation:marq 30s linear infinite}
+.marq:hover .marq-track{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+.app-tile{display:flex;flex-direction:column;align-items:center;gap:12px;width:118px;margin-right:26px;flex:none;transition:transform .2s ease}
+.app-tile:hover{transform:translateY(-5px)}
+.app-ic{width:80px;height:80px;border-radius:21px;background:#fff;border:1px solid var(--line);
+  box-shadow:var(--shadow-card);display:flex;align-items:center;justify-content:center;transition:box-shadow .2s ease}
+.app-tile:hover .app-ic{box-shadow:var(--shadow-pop)}
+.app-ic svg{width:42px;height:42px}
+.app-ic.dark{background:#0d0d12;border-color:#0d0d12}
+.app-tile>span{font-weight:600;font-size:13.5px;color:var(--ink)}
+
+/* ---------- feed v2 ---------- */
+.feed2{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-pop);padding:18px 20px 6px;max-width:370px;width:100%}
+.feed2 .fhead{display:flex;align-items:center;justify-content:space-between;font-family:var(--font-head);
+  font-weight:700;font-size:14px;padding-bottom:13px;border-bottom:1px solid var(--line-soft)}
+.feed2 .live{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;letter-spacing:1px;color:var(--green);font-weight:700}
+.feed2 .live i{width:7px;height:7px;border-radius:99px;background:var(--green)}
+.feed2 .frow2{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px dashed var(--line-soft)}
+.feed2 .frow2:last-child{border-bottom:none}
+.feed2 .fic{flex:none;width:32px;height:32px;border-radius:9px;background:var(--blue-tint);color:var(--blue);
+  display:flex;align-items:center;justify-content:center}
+.feed2 .fic svg{width:15px;height:15px}
+.feed2 .fic.grn{background:#e8f9ef;color:var(--green)}
+.feed2 .ft{font-size:13.5px;line-height:1.45;color:var(--ink)}
+.feed2 .ft .tm{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+.feed2 .up{color:var(--green);font-weight:800}
+
+/* ---------- small cards ---------- */
+.sm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sm-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);box-shadow:0 1px 2px rgba(13,13,18,.04);padding:28px 28px 26px}
+.sm-card h3{font-size:18px;margin-bottom:8px}
+.sm-card p{color:var(--body);font-size:14.5px;line-height:1.6}
 
 /* ---------- iphone mock ---------- */
 .iphone{width:250px;background:#0d0d12;border-radius:44px;padding:9px;box-shadow:var(--shadow-pop)}
@@ -250,10 +290,11 @@ p{margin:0}
 .ai-chat .q{display:flex;gap:10px;font-size:13.5px;color:var(--ink);font-weight:600;padding-bottom:14px;border-bottom:1px solid var(--line-soft)}
 .ai-chat .a{display:flex;gap:10px;font-size:13.5px;color:var(--body);padding-top:14px;line-height:1.55}
 .ai-chat .logo-dot{flex:none;width:26px;height:26px;border-radius:99px;background:#0d0d12;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.ai-chat .logo-dot svg{width:15px;height:15px}
 .ai-chat .logo-dot.u{background:var(--blue-tint);color:var(--blue)}
 .ai-chat .hl-biz{background:var(--blue-tint);color:var(--blue-d);font-weight:700;border-radius:5px;padding:1px 5px}
 .own-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-pop);padding:26px;max-width:380px;width:100%}
-.own-card .dom{font-family:var(--font-head);font-weight:800;font-size:19px}
+.own-card .dom{font-family:var(--font-head);font-weight:800;font-size:19px;padding-bottom:14px;border-bottom:1px solid var(--line-soft);margin-bottom:4px}
 .own-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--line-soft);font-size:13.5px}
 .own-row:last-child{border-bottom:none}
 .own-row .k{color:var(--muted)}
@@ -306,7 +347,9 @@ p{margin:0}
 .plan .pnote{font-size:14px;color:var(--muted)}
 .plan-wide .price .n{font-size:64px}
 .plan-wide .btn{width:auto;margin-top:28px}
-@media (min-width:761px){.plan-wide .plist{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin:0}}
+.pw-lab{font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+@media (min-width:1081px){.pw-right{border-left:1px solid var(--line-soft);padding-left:52px}}
+@media (min-width:761px){.plan-wide .plist{display:grid;grid-template-columns:1fr 1fr;gap:15px 26px;margin:0}}
 .plan .plist{margin:20px 0 28px;display:flex;flex-direction:column;gap:12px;flex:1}
 .plan .plist div{display:flex;gap:11px;font-size:15px;color:var(--ink);line-height:1.5}
 .plan .plist .from{font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px}
@@ -350,9 +393,6 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 .foot-col .head{font-weight:700;font-size:15px;margin-bottom:18px;font-family:var(--font-head)}
 .foot-col a{display:block;color:var(--body);font-size:15px;padding:7px 0}
 .foot-col a:hover{color:var(--blue)}
-.foot-punch{text-align:center;font-family:var(--font-head);font-weight:800;font-size:clamp(30px,4.5vw,52px);
-  line-height:1.2;letter-spacing:-1.5px;color:var(--ink);margin-bottom:48px}
-.foot-punch .accent{color:var(--blue)}
 .foot-bottom{text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line-soft);padding-top:32px}
 
 /* ---------- responsive ---------- */
@@ -369,6 +409,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
   .frow.rev .vis{order:2}
   .bento{grid-template-columns:1fr}
   .bcard.blue{grid-template-columns:1fr}
+  .sm-grid{grid-template-columns:1fr 1fr}
   .plan-wide{grid-template-columns:1fr;gap:34px;padding:44px 36px 40px}
   .price-head{grid-template-columns:1fr;gap:18px}
   .final-cta{grid-template-columns:1fr;padding:56px 36px;text-align:left}
@@ -396,7 +437,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
   .demo-card{padding:36px 24px}
   .trade-photos{display:flex;overflow-x:auto;gap:14px;margin:0 -24px 44px;padding:0 24px 10px;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
   .tphoto{flex:0 0 60%;scroll-snap-align:start}
-  .plat{min-width:calc(50% - 8px);padding:20px 14px}
+  .sm-grid{grid-template-columns:1fr}
   .iphone{width:225px}
   .cmp{padding:28px 24px}
   .foot-grid{grid-template-columns:1fr;gap:28px}
@@ -437,6 +478,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 <header class="hero" id="top">
   <div class="grid-bg"></div>
 
+  <div class="wrap">
   <div class="float-card fc1">
     <div class="small">Site health</div>
     <div class="dial">97%</div>
@@ -454,16 +496,13 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
     Water heater cost in Tampa
     <div><span class="pill">✓ On autopilot</span></div>
   </div>
-
-  <div class="wrap">
     <div class="hero-inner">
-      <h1>The Website &amp; SEO App <br>for <span class="accent">Contractors</span></h1>
-      <p class="sub">Paste your Google Maps link and Jed builds your website in 60 seconds. Then it works every day to get you found on Google, Maps &amp; ChatGPT. You just answer the phone.</p>
+      <h1>Get Customers <br>on <span class="accent">Autopilot</span></h1>
+      <p class="sub">Jed builds your website in 60 seconds, then does your local SEO every day. You just answer the phone.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list"><svg class="apl" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Coming soon on the App Store</a>
       </div>
-      <p class="hero-note"><b style="color:var(--ink)">$99/mo flat.</b> No per-lead fees, ever. Cancel anytime, keep everything.</p>
-      <p class="hero-note" style="margin-top:6px">Built for plumbers, HVAC, electricians, lawn care, roofers &amp; 50+ trades.</p>
+      <p class="hero-note">Built for plumbers, HVAC, electricians, lawn care, roofers &amp; 50+ trades.</p>
     </div>
 
     <!-- demo card -->
@@ -471,12 +510,12 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
       <div class="demo-card">
         <div>
           <div class="live-dot"><i></i>LIVE IN 60 SECONDS</div>
-          <h2>From Maps link to a live website. In one minute.</h2>
-          <p class="sub">No forms. No design meetings. No laptop. Paste the link to your Google Maps listing and watch Jed build your site and domain, right from the app.</p>
+          <h2>You’re live in 60 seconds. Then Jed gets to work.</h2>
+          <p class="sub">Paste your Google Maps link. The website is just the start: from day one, Jed works daily to turn searches into customers.</p>
           <div class="demo-steps">
             <div><span class="n">1</span><span><b>Paste</b>&nbsp;your Google Maps link</span></div>
-            <div><span class="n">2</span><span><b>Watch</b>&nbsp;your website go live in 60 seconds</span></div>
-            <div><span class="n">3</span><span><b>Answer</b>&nbsp;the phone. Jed handles the rest, daily</span></div>
+            <div><span class="n">2</span><span><b>Go live</b>&nbsp;in 60 seconds, site and domain done</span></div>
+            <div><span class="n">3</span><span><b>Grow</b>&nbsp;daily: Jed ships one SEO action every day</span></div>
           </div>
         </div>
         <div class="phone-mock">
@@ -518,8 +557,9 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 <section class="section" id="trades">
   <div class="wrap">
     <div class="section-head">
-      <h2>Made for <span class="accent">your trade</span></h2>
-      <p class="sub">If you keep homes running, Jed keeps your phone ringing. Tuned for the way local service pros actually work.</p>
+      <div class="eyebrow">Who it’s for</div>
+      <h2>Made for <span class="accent">contractors</span></h2>
+      <p class="sub">If you keep homes running, Jed keeps your phone ringing.</p>
     </div>
     <div class="trade-photos">
       <figure class="tphoto"><img src="img/trade-plumbing.jpg" alt="Plumber fixing a sink" loading="lazy"><figcaption>Plumbing</figcaption></figure>
@@ -552,11 +592,13 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <div class="section-head">
+      <div class="eyebrow">Your options</div>
       <h2>Same goal. Wildly <span class="accent">different bills</span>.</h2>
       <p class="sub">What local pros pay today to make the phone ring, and what Jed changes.</p>
     </div>
     <div class="cmp-grid">
       <div class="cmp">
+        <div class="alt-tag">Alternative 1</div>
         <div class="cname">Lead brokers<span class="csub">Thumbtack · Angi · Yelp</span></div>
         <div class="cprice">$350<span>+/mo</span></div>
         <div class="cdesc">in per-lead fees, forever</div>
@@ -567,6 +609,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
         </ul>
       </div>
       <div class="cmp">
+        <div class="alt-tag">Alternative 2</div>
         <div class="cname">Local SEO agency<span class="csub">Retainer + contract</span></div>
         <div class="cprice">$1,500<span>+/mo</span></div>
         <div class="cdesc">12-month commitment</div>
@@ -577,6 +620,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
         </ul>
       </div>
       <div class="cmp jed">
+        <div class="alt-tag">The Jed way</div>
         <div class="cname"><svg viewBox="0 0 24 24" fill="none"><path d="M2.4 20.4 22 12 2.4 3.6v6.3L15.6 12 2.4 14.1z" fill="#fff"/></svg>Jed</div>
         <div class="cprice">$99<span>/mo flat</span></div>
         <div class="cdesc">everything included</div>
@@ -594,12 +638,10 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 <!-- ══════════ HOW IT WORKS ══════════ -->
 <section class="section" id="how" style="padding-top:0">
   <div class="wrap">
-    <div class="how-head">
-      <h2>How Jed gets you <span class="accent">found</span></h2>
-      <div class="right">
-        <p>Jed does the heavy lifting. Relax while it works your local SEO every single day to keep you ahead of the pros next door.</p>
-        <a class="btn btn-primary" href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list"><svg class="apl" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Coming soon on the App Store</a>
-      </div>
+    <div class="section-head">
+      <div class="eyebrow">How it works</div>
+      <h2>How Jed makes <span class="accent">magic</span> happen</h2>
+      <p class="sub">Three steps, zero laptop. Jed works your local SEO every single day to keep you ahead of the pros next door.</p>
     </div>
     <div class="cards-3">
       <div class="fcard">
@@ -611,6 +653,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
           </div>
         </div>
         <div class="body">
+          <span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
           <h3>Paste your Maps link</h3>
           <p>Jed reads your services, area, photos and reviews straight from your listing. No forms, no setup, no laptop needed.</p>
         </div>
@@ -630,6 +673,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
           </div>
         </div>
         <div class="body">
+          <span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg></span>
           <h3>Website live in 60 seconds</h3>
           <p>Your own domain and a site built to turn searches into phone calls. Managed entirely from your phone.</p>
         </div>
@@ -643,6 +687,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
           </div>
         </div>
         <div class="body">
+          <span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></span>
           <h3>Jed works daily, on autopilot</h3>
           <p>New local pages, Google posts, review replies and rank tracking: one growth action shipped every day. You just answer the phone.</p>
         </div>
@@ -655,20 +700,21 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 <section class="section" id="what" style="padding-top:0">
   <div class="wrap">
     <div class="section-head">
+      <div class="eyebrow">What you get</div>
       <h2>Unlock your <span class="accent">local growth</span></h2>
       <p class="sub">One subscription. Everything that gets you the call.</p>
     </div>
 
     <div class="frow">
       <div class="txt">
-        <h3>Get recommended by ChatGPT</h3>
+        <h3>Get recommended by <span class="h3ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg></span> ChatGPT</h3>
         <p>When your neighbors ask AI for “the best plumber near me”, the answer comes from today’s search leaders. Jed builds the pages, profiles and signals AI assistants actually read, so the name they hear is yours.</p>
         <a class="btn btn-primary" href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list"><svg class="apl" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Coming soon on the App Store</a>
       </div>
       <div class="vis">
         <div class="ai-chat">
           <div class="q"><span class="logo-dot u">You</span><span>Who’s the best plumber in Tampa for a water heater swap?</span></div>
-          <div class="a"><span class="logo-dot">AI</span><span><span class="hl-biz">Rodriguez Plumbing</span> is highly rated in Tampa Bay (4.9★, 127 reviews) and offers same-day water heater replacement…</span></div>
+          <div class="a"><span class="logo-dot"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg></span><span><span class="hl-biz">Rodriguez Plumbing</span> is highly rated in Tampa Bay (4.9★, 127 reviews) and offers same-day water heater replacement…</span></div>
         </div>
       </div>
     </div>
@@ -679,11 +725,12 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
         <p>SEO used to be an invoice and a shrug. With Jed you watch the work happen: every page, post, reply and ranking move shows up in your daily feed. Proof of work, every single day.</p>
       </div>
       <div class="vis">
-        <div class="v-feed" style="max-width:340px">
-          <div class="row"><span class="ok">✓</span><span>Published: <b>Water heater cost in Tampa (2026)</b><span class="t">Today, 7:02 AM</span></span></div>
-          <div class="row"><span class="ok">✓</span><span>Ranked #3 → <b>#1</b> · “emergency plumber tampa”<span class="t">Today</span></span></div>
-          <div class="row"><span class="ok">✓</span><span>Replied to Maria G.’s ★★★★★ review<span class="t">Yesterday</span></span></div>
-          <div class="row"><span class="ok">✓</span><span>New page: <b>Drain cleaning in Brandon</b><span class="t">Tuesday</span></span></div>
+        <div class="feed2">
+          <div class="fhead"><span>Jed · Daily log</span><span class="live"><i></i>WORKING</span></div>
+          <div class="frow2"><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span><span class="ft">Published <b>Water heater cost in Tampa</b><span class="tm">Today, 7:02 AM</span></span></div>
+          <div class="frow2"><span class="fic grn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg></span><span class="ft">“emergency plumber tampa” <span class="up">#3 → #1</span><span class="tm">Today</span></span></div>
+          <div class="frow2"><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><span class="ft">Replied to Maria G.’s ★★★★★ review<span class="tm">Yesterday</span></span></div>
+          <div class="frow2"><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span><span class="ft">New page: <b>Drain cleaning in Brandon</b><span class="tm">Tuesday</span></span></div>
         </div>
       </div>
     </div>
@@ -733,15 +780,12 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <div class="section-head">
-      <h2>Make AI recommend <span class="accent">your business</span></h2>
-      <p class="sub">When your neighbors search or ask AI for a local pro, Jed makes sure the answer is you.</p>
+      <div class="eyebrow">AI search</div>
+      <h2>Get ranked on <span class="accent">every AI</span></h2>
+      <p class="sub">The engines your customers already ask, all reading the work Jed ships for you.</p>
     </div>
-    <div class="plat-row">
-      <div class="plat"><svg viewBox="0 0 24 24" fill="#4285F4"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg><span>Google</span></div>
-      <div class="plat"><svg viewBox="0 0 24 24" fill="#EA4335"><path d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z"/></svg><span>Google Maps</span></div>
-      <div class="plat"><svg viewBox="0 0 24 24" fill="#0d0d12"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg><span>ChatGPT</span></div>
-      <div class="plat"><svg viewBox="0 0 24 24" fill="#3E82FF"><path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/></svg><span>Gemini</span></div>
-      <div class="plat"><svg viewBox="0 0 24 24" fill="#D97757"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg><span>Claude</span></div>
+    <div class="marq">
+      <div class="marq-track"><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg></span><span>Google</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24" fill="#EA4335"><path d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z"/></svg></span><span>Google Maps</span></div><div class="app-tile"><span class="app-ic dark"><svg viewBox="0 0 24 24" fill="#ffffff"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg></span><span>ChatGPT</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24"><defs><linearGradient id="gg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4796E3"/><stop offset=".55" stop-color="#9177C7"/><stop offset="1" stop-color="#D3606D"/></linearGradient></defs><path fill="url(#gg1)" d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/></svg></span><span>Gemini</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24" fill="#D97757"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg></span><span>Claude</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24" fill="#20808D"><path d="M22.3977 7.0896h-2.3106V.0676l-7.5094 6.3542V.1577h-1.1554v6.1966L4.4904 0v7.0896H1.6023v10.3976h2.8882V24l6.932-6.3591v6.2005h1.1554v-6.0469l6.9318 6.1807v-6.4879h2.8882V7.0896zm-3.4657-4.531v4.531h-5.355l5.355-4.531zm-13.2862.0676 4.8691 4.4634H5.6458V2.6262zM2.7576 16.332V8.245h7.8476l-6.1149 6.1147v1.9723H2.7576zm2.8882 5.0404v-3.8852h.0001v-2.6488l5.7763-5.7764v7.0111l-5.7764 5.2993zm12.7086.0248-5.7766-5.1509V9.0618l5.7766 5.7766v6.5588zm2.8882-5.0652h-1.733v-1.9723L13.3948 8.245h7.8478v8.087z"/></svg></span><span>Perplexity</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg></span><span>Google</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24" fill="#EA4335"><path d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z"/></svg></span><span>Google Maps</span></div><div class="app-tile"><span class="app-ic dark"><svg viewBox="0 0 24 24" fill="#ffffff"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg></span><span>ChatGPT</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24"><defs><linearGradient id="gg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4796E3"/><stop offset=".55" stop-color="#9177C7"/><stop offset="1" stop-color="#D3606D"/></linearGradient></defs><path fill="url(#gg1)" d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/></svg></span><span>Gemini</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24" fill="#D97757"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg></span><span>Claude</span></div><div class="app-tile"><span class="app-ic"><svg viewBox="0 0 24 24" fill="#20808D"><path d="M22.3977 7.0896h-2.3106V.0676l-7.5094 6.3542V.1577h-1.1554v6.1966L4.4904 0v7.0896H1.6023v10.3976h2.8882V24l6.932-6.3591v6.2005h1.1554v-6.0469l6.9318 6.1807v-6.4879h2.8882V7.0896zm-3.4657-4.531v4.531h-5.355l5.355-4.531zm-13.2862.0676 4.8691 4.4634H5.6458V2.6262zM2.7576 16.332V8.245h7.8476l-6.1149 6.1147v1.9723H2.7576zm2.8882 5.0404v-3.8852h.0001v-2.6488l5.7763-5.7764v7.0111l-5.7764 5.2993zm12.7086.0248-5.7766-5.1509V9.0618l5.7766 5.7766v6.5588zm2.8882-5.0652h-1.733v-1.9723L13.3948 8.245h7.8478v8.087z"/></svg></span><span>Perplexity</span></div></div>
     </div>
     <div class="bcard blue">
       <div>
@@ -759,26 +803,43 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
   </div>
 </section>
 
+<!-- ══════════ AND SO MUCH MORE ══════════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">And so much more</div>
+      <h2>Jed handles <span class="accent">all of this</span> too</h2>
+    </div>
+    <div class="sm-grid">
+      <div class="sm-card"><span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span><h3>Rank tracking</h3><p>Your positions on Google, Maps and AI answers, tracked and reported every week.</p></div>
+      <div class="sm-card"><span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span><h3>Review replies</h3><p>Every Google review answered fast and in your voice, five stars or one.</p></div>
+      <div class="sm-card"><span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span><h3>Weekly report</h3><p>Rankings, visits and calls in plain English. No dashboards, no homework.</p></div>
+      <div class="sm-card"><span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span><h3>Local pages &amp; cost guides</h3><p>The exact pages your neighbors search for, written and shipped daily.</p></div>
+      <div class="sm-card"><span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Your domain, your name</h3><p>Registered to you from day one. Leave anytime and take everything with you.</p></div>
+      <div class="sm-card"><span class="ichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"/></svg></span><h3>Chat to change anything</h3><p>Prices, photos, promos, new services: one message and it&rsquo;s live.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- ══════════ PRICING ══════════ -->
 <section class="section" id="pricing" style="padding-top:0">
   <div class="wrap">
-    <div class="price-head">
-      <h2>One plan.<br>Everything on <span class="accent">autopilot</span>.</h2>
-      <div class="right">
-        <p>Everything Jed does, one flat price. No contracts, no setup fees, no per-lead fees. Cancel anytime: your domain and website stay yours.</p>
-      </div>
+    <div class="section-head">
+      <div class="eyebrow">Pricing</div>
+      <h2>One plan. Everything on <span class="accent">autopilot</span>.</h2>
+      <p class="sub">No contracts, no setup fees, no per-lead fees. Cancel anytime: your domain and website stay yours.</p>
     </div>
     <div class="plans">
       <div class="plan featured plan-wide">
-        <div class="tag-pop">Founding pricing · locked in from day one</div>
         <div>
-          <div class="pname">Jed</div>
-          <div class="pfor">Website, daily SEO and AI visibility. All of it, done for you</div>
+          <div class="pname">All in one</div>
           <div class="price"><span class="n">$99</span><span class="per">/mo</span></div>
-          <div class="pnote">One extra job a month covers it. Everything after that is yours.</div>
+          <div class="pnote">Growth on autopilot. One extra job a month covers it.</div>
           <a class="btn btn-primary" href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list"><svg class="apl" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Coming soon on the App Store</a>
         </div>
-        <div class="plist">
+        <div class="pw-right">
+          <div class="pw-lab">What&rsquo;s included</div>
+          <div class="plist">
           <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Website &amp; your own domain, live in 60 seconds</span></div>
           <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Domain registered in <b>your</b> name, yours forever</span></div>
           <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>1 growth action shipped <b>every day</b>, on autopilot</span></div>
@@ -787,6 +848,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
           <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Google, Maps &amp; ChatGPT rank tracking</span></div>
           <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Weekly report: rankings, visits, calls</span></div>
           <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Change anything by chat, right from the app</span></div>
+        </div>
         </div>
       </div>
     </div>
@@ -891,7 +953,6 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
         <a href="mailto:hello@jed.so">Contact</a>
       </div>
     </div>
-    <div class="foot-punch">Jed does the marketing.<br>You <span class="accent">answer the phone</span>.</div>
     <div class="foot-bottom">© 2026 DS Maker LTD · jed.so</div>
   </div>
 </footer>
