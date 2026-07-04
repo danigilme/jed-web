@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jed · Hire Your AI Marketing Guy</title>
 <meta name="description" content="Hire Jed, the AI marketing guy for contractors. He builds your website in 60 seconds, then works every day to get you found on Google, Maps and ChatGPT. One flat price, no per-lead fees.">
-<meta name="theme-color" content="#2b5cff">
-<link rel="icon" href="img/jed-mascot.svg?v=1" type="image/svg+xml">
-<link rel="icon" href="img/favicon-32.png?v=1" sizes="32x32" type="image/png">
+<meta name="theme-color" content="#3a88fe">
+<link rel="icon" href="img/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png?v=2" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=1">
 <meta property="og:title" content="Jed · Hire Your AI Marketing Guy">
 <meta property="og:description" content="He builds your website in 60 seconds, then works every day to get you found on Google, Maps and ChatGPT. One flat price, no per-lead fees.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jed.so">
-<meta property="og:image" content="https://jed.so/img/og.jpg?v=3">
+<meta property="og:image" content="https://jed.so/img/og.jpg?v=4">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://jed.so/img/og.jpg?v=3">
+<meta name="twitter:image" content="https://jed.so/img/og.jpg?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
 :root{
   --ink:#0d0d12; --body:#363d4f; --muted:#6b7280;
   --line:#e5e7eb; --line-soft:#eef0f3;
-  --blue:#2b5cff; --blue-d:#1e48e0; --blue-tint:#eff3ff; --blue-tint-2:#e3ebff;
-  --jed:#3a88fe; /* mascot + light accents only: fails AA with white text, never on buttons */
+  /* One brand hue, one scale: 500 = brand (mascot, buttons, fills), 600 = small blue text on white, 700 = hover/dark */
+  --blue:#3a88fe; --blue-text:#2463e8; --blue-d:#1d54d1; --blue-tint:#eff4ff; --blue-tint-2:#e2edff;
   --sky:#a9c7ff; --red:#e8503a; --green:#16a34a;
   --maxw:1200px; --r-card:16px; --r-big:24px;
   --shadow-card:0 1px 2px rgba(13,13,18,.05),0 8px 24px rgba(13,13,18,.05);
@@ -58,7 +58,7 @@ p{margin:0}
 .btn .arr{transition:transform .15s ease}
 .btn:hover .arr{transform:translateX(3px)}
 .btn-primary{background:var(--blue);color:#fff;border:2px solid rgba(255,255,255,.65);
-  box-shadow:0 0 0 3px rgba(43,92,255,.30),0 10px 26px rgba(43,92,255,.35)}
+  box-shadow:0 0 0 3px rgba(58,136,254,.30),0 10px 26px rgba(58,136,254,.35)}
 .btn-primary:hover{background:var(--blue-d)}
 .btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:0 1px 2px rgba(13,13,18,.05)}
 .btn-ghost:hover{box-shadow:var(--shadow-card)}
@@ -73,7 +73,7 @@ p{margin:0}
 .brand{display:flex;align-items:center;gap:9px;font-family:var(--font-head);font-weight:800;font-size:22px;letter-spacing:-.5px;color:var(--ink)}
 .brand svg{width:26px;height:26px}
 .nav-links{display:flex;gap:34px;font-weight:600;font-size:15px;color:var(--ink)}
-.nav-links a:hover{color:var(--blue)}
+.nav-links a:hover{color:var(--blue-text)}
 .nav-ctas{display:flex;gap:10px;align-items:center}
 .nav .btn{padding:12px 22px;font-size:15px}
 .burger{display:none;background:#f4f5f7;border:none;border-radius:999px;width:44px;height:44px;cursor:pointer;align-items:center;justify-content:center}
@@ -105,6 +105,7 @@ p{margin:0}
   border-radius:999px;padding:8px 18px 8px 12px;font-family:var(--font-head);font-weight:700;font-size:14px;
   box-shadow:0 1px 2px rgba(13,13,18,.05);margin-bottom:24px}
 .meet img{width:24px;height:24px}
+.meet .fc-dot{margin-right:0}
 .brand img{width:26px;height:26px}
 .hero-ctas{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
 .hero-note{margin-top:18px;font-size:14px;color:var(--muted)}
@@ -116,7 +117,7 @@ p{margin:0}
 .fc2{left:-60px;top:248px;transform:rotate(6deg)}
 .fc3{right:-20px;top:18px;transform:rotate(6deg)}
 .fc4{right:-52px;top:238px;transform:rotate(-5deg)}
-.fc4 .pill{display:inline-block;background:var(--blue-tint);color:var(--blue);border-radius:6px;padding:2px 7px;font-size:11px;font-weight:700;margin-top:6px}
+.fc4 .pill{display:inline-block;background:var(--blue-tint);color:var(--blue-text);border-radius:6px;padding:2px 7px;font-size:11px;font-weight:700;margin-top:6px}
 .fc-dot{display:inline-block;width:8px;height:8px;border-radius:99px;background:var(--green);margin-right:6px}
 
 /* ---------- demo card ---------- */
@@ -181,7 +182,7 @@ p{margin:0}
 .cmp li{display:flex;gap:11px;align-items:flex-start;font-size:15px;line-height:1.5;color:var(--body)}
 .cmp li svg{margin-top:3px}
 .cmp li .ico{color:var(--red)}
-.cmp.jed{background:var(--blue);border:none;color:#fff;box-shadow:0 0 0 4px rgba(43,92,255,.15),var(--shadow-pop)}
+.cmp.jed{background:var(--blue);border:none;color:#fff;box-shadow:0 0 0 4px rgba(58,136,254,.15),var(--shadow-pop)}
 .cmp.jed .cname{color:#fff;display:flex;align-items:center;gap:9px}
 .cmp.jed .cname svg{width:22px;height:22px}
 .cmp.jed .cprice{color:#fff}
@@ -229,7 +230,7 @@ p{margin:0}
 .sm-card h3{font-size:18px;margin-bottom:8px}
 .sm-card p{color:var(--body);font-size:14.5px;line-height:1.6}
 .sm-card .ichip{width:54px;height:54px;border-radius:15px;margin-bottom:18px;color:#fff;
-  background:linear-gradient(135deg,var(--blue) 0%,var(--blue-d) 100%);box-shadow:0 8px 18px rgba(43,92,255,.28)}
+  background:linear-gradient(135deg,var(--blue) 0%,var(--blue-d) 100%);box-shadow:0 8px 18px rgba(58,136,254,.28)}
 .sm-card .ichip svg{width:25px;height:25px}
 
 /* ---------- iphone mock ---------- */
@@ -237,7 +238,7 @@ p{margin:0}
 .iphone .scr{background:#f7f8fb;border-radius:36px;overflow:hidden;position:relative;padding:14px 13px 10px}
 .iphone .island{width:78px;height:22px;background:#0d0d12;border-radius:99px;margin:2px auto 14px}
 .i-head{display:flex;align-items:center;gap:7px;font-family:var(--font-head);font-weight:800;font-size:15px;margin-bottom:10px}
-.i-head svg{width:17px;height:17px}
+.i-head svg,.i-head img{width:17px;height:17px}
 .i-card{background:#fff;border:1px solid var(--line-soft);border-radius:12px;padding:11px 12px;margin-bottom:8px}
 .i-card .k{font-size:9.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.6px}
 .i-card .v{font-family:var(--font-head);font-weight:800;font-size:17px;color:var(--green);margin-top:2px}
@@ -260,7 +261,7 @@ p{margin:0}
 .v-input{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-pop);padding:16px;width:100%;max-width:270px;transform:rotate(-2deg)}
 .v-input .lab{font-size:11px;color:var(--muted);font-weight:600;margin-bottom:6px}
 .v-input .field{border:1.5px solid var(--blue);border-radius:8px;padding:9px 11px;font-size:12.5px;color:var(--ink);overflow:hidden;white-space:nowrap}
-.v-input .go{background:var(--blue);color:#fff;border-radius:8px;padding:9px 0;text-align:center;font-size:12.5px;font-weight:700;margin-top:8px;transform:rotate(1.5deg);box-shadow:0 6px 16px rgba(43,92,255,.35)}
+.v-input .go{background:var(--blue);color:#fff;border-radius:8px;padding:9px 0;text-align:center;font-size:12.5px;font-weight:700;margin-top:8px;transform:rotate(1.5deg);box-shadow:0 6px 16px rgba(58,136,254,.35)}
 .v-feed{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-pop);padding:14px;width:100%;max-width:280px}
 .v-feed .row{display:flex;gap:9px;align-items:flex-start;padding:8px 4px;font-size:12px;color:var(--ink);border-bottom:1px dashed var(--line-soft)}
 .v-feed .row:last-child{border-bottom:none}
@@ -364,7 +365,7 @@ p{margin:0}
 .plan .plist div{display:flex;gap:11px;font-size:15px;color:var(--ink);line-height:1.5}
 .plan .plist .from{font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px}
 .plan .btn{width:100%}
-.plan.featured{border:2px solid var(--blue);box-shadow:0 0 0 4px rgba(43,92,255,.12),var(--shadow-pop)}
+.plan.featured{border:2px solid var(--blue);box-shadow:0 0 0 4px rgba(58,136,254,.12),var(--shadow-pop)}
 .plan .tag-pop{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;
   font-size:12px;font-weight:700;border-radius:99px;padding:6px 14px;letter-spacing:.4px;white-space:nowrap}
 .price-strip{margin-top:26px;background:var(--blue-tint);border-radius:var(--r-card);padding:24px 30px;
@@ -401,10 +402,10 @@ p{margin:0}
 footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:56px}
 .foot-brand p{color:var(--body);font-size:15px;margin-top:16px;max-width:32ch}
-.foot-brand .mail{display:inline-flex;margin-top:18px;font-weight:600;color:var(--blue)}
+.foot-brand .mail{display:inline-flex;margin-top:18px;font-weight:600;color:var(--blue-text)}
 .foot-col .head{font-weight:700;font-size:15px;margin-bottom:18px;font-family:var(--font-head)}
 .foot-col a{display:block;color:var(--body);font-size:15px;padding:7px 0}
-.foot-col a:hover{color:var(--blue)}
+.foot-col a:hover{color:var(--blue-text)}
 .foot-bottom{text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line-soft);padding-top:32px}
 
 /* ---------- responsive ---------- */
@@ -483,7 +484,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
     <a href="#what" onclick="mm.classList.remove('open')">What you get</a>
     <a href="#pricing" onclick="mm.classList.remove('open')">Pricing</a>
     <a href="#faq" onclick="mm.classList.remove('open')">FAQ</a>
-    <a href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list" style="color:var(--blue);font-weight:700">Coming soon on the App Store →</a>
+    <a href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list" style="color:var(--blue-text);font-weight:700">Coming soon on the App Store →</a>
   </div>
 </div>
 
@@ -510,7 +511,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
     <div><span class="pill">✓ On auto-pilot</span></div>
   </div>
     <div class="hero-inner">
-      <div class="meet"><img src="img/jed-mascot.svg?v=1" alt="Jed, the mascot"> Meet Jed</div>
+      <div class="meet"><img src="img/jed-mascot.svg?v=1" alt="Jed, the mascot"> <span class="fc-dot"></span>Ready to work</div>
       <h1>Hire <span class="accent">Jed</span>. <br>Your AI Marketing Guy.</h1>
       <p class="sub">He builds your website in 60 seconds, then works every day to get you found on Google, Maps and ChatGPT. On auto-pilot.</p>
       <div class="hero-ctas">
@@ -775,7 +776,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
         <div class="iphone">
           <div class="scr">
             <div class="island"></div>
-            <div class="i-head"><svg viewBox="0 0 24 24" fill="none"><path d="M2.4 20.4 22 12 2.4 3.6v6.3L15.6 12 2.4 14.1z" fill="#2b5cff"/></svg>Jed</div>
+            <div class="i-head"><img src="img/jed-mascot.svg?v=1" alt="" width="20" height="20">Jed</div>
             <div class="i-card"><div class="k">Site health</div><div class="v">97% · Rank #1</div></div>
             <div class="i-feed">
               <div><span class="ok">✓</span><span>Published: Drain cleaning in Brandon</span></div>
@@ -855,14 +856,14 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
         <div class="pw-right">
           <div class="pw-lab">What&rsquo;s included</div>
           <div class="plist">
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Website &amp; your own domain, live in 60 seconds</span></div>
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Domain registered in <b>your</b> name, yours forever</span></div>
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>1 growth action shipped <b>every day</b>, on auto-pilot</span></div>
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Local pages &amp; cost guides that rank</span></div>
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Google Business posts + review replies</span></div>
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Google, Maps &amp; ChatGPT rank tracking</span></div>
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Weekly report: rankings, visits, calls</span></div>
-          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#2b5cff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Change anything by chat, right from the app</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Website &amp; your own domain, live in 60 seconds</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Domain registered in <b>your</b> name, yours forever</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>1 growth action shipped <b>every day</b>, on auto-pilot</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Local pages &amp; cost guides that rank</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Google Business posts + review replies</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Google, Maps &amp; ChatGPT rank tracking</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Weekly report: rankings, visits, calls</span></div>
+          <div><span class="chk"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.8 9 10 3.5" stroke="#3a88fe" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Change anything by chat, right from the app</span></div>
         </div>
         </div>
       </div>
@@ -879,7 +880,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
   <div class="wrap">
     <div class="section-head" style="margin-bottom:48px">
       <h2>Have questions?</h2>
-      <p class="sub">Can’t find what you’re looking for? Write to <a href="mailto:hello@jed.so" style="color:var(--blue);font-weight:600">hello@jed.so</a></p>
+      <p class="sub">Can’t find what you’re looking for? Write to <a href="mailto:hello@jed.so" style="color:var(--blue-text);font-weight:600">hello@jed.so</a></p>
     </div>
     <div class="faq">
       <details>
