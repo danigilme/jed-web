@@ -11,7 +11,11 @@
 <meta property="og:description" content="The iPhone app that builds your website and runs your local SEO daily. Get found on Google, Maps & ChatGPT. No per-lead fees, ever.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jed.so">
+<meta property="og:image" content="https://jed.so/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jed.so/img/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -169,7 +173,7 @@ p{margin:0}
 .cmp.jed .cprice{color:#fff}
 .cmp.jed .cdesc{color:var(--sky)}
 .cmp.jed li{color:rgba(255,255,255,.95)}
-.cmp.jed li .ico{color:#7ef0a5}
+.cmp.jed li .ico{color:#fff}
 .cmp.jed .btn{margin-top:24px}
 .chk{flex:none;width:22px;height:22px;border-radius:99px;border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;margin-top:1px}
 .chk svg{width:11px;height:11px}
@@ -346,6 +350,9 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
 .foot-col .head{font-weight:700;font-size:15px;margin-bottom:18px;font-family:var(--font-head)}
 .foot-col a{display:block;color:var(--body);font-size:15px;padding:7px 0}
 .foot-col a:hover{color:var(--blue)}
+.foot-punch{text-align:center;font-family:var(--font-head);font-weight:800;font-size:clamp(30px,4.5vw,52px);
+  line-height:1.2;letter-spacing:-1.5px;color:var(--ink);margin-bottom:48px}
+.foot-punch .accent{color:var(--blue)}
 .foot-bottom{text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line-soft);padding-top:32px}
 
 /* ---------- responsive ---------- */
@@ -413,7 +420,6 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
       <a href="#faq">FAQ</a>
     </div>
     <div class="nav-ctas">
-      <a class="btn btn-ghost" href="#how">See how it works</a>
       <a class="btn btn-primary" href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list"><svg class="apl" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Soon on the App Store</a>
       <button class="burger" aria-label="Menu" onclick="document.getElementById('mm').classList.toggle('open')"><span></span></button>
     </div>
@@ -456,7 +462,8 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
       <div class="hero-ctas">
         <a class="btn btn-primary" href="mailto:hello@jed.so?subject=Put%20me%20on%20the%20Jed%20launch%20list"><svg class="apl" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Coming soon on the App Store</a>
       </div>
-      <p class="hero-note">Built for plumbers, HVAC, electricians, lawn care, roofers &amp; 50+ trades.</p>
+      <p class="hero-note"><b style="color:var(--ink)">$99/mo flat.</b> No per-lead fees, ever. Cancel anytime, keep everything.</p>
+      <p class="hero-note" style="margin-top:6px">Built for plumbers, HVAC, electricians, lawn care, roofers &amp; 50+ trades.</p>
     </div>
 
     <!-- demo card -->
@@ -808,7 +815,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
       </details>
       <details>
         <summary>How fast will I see results?<span class="plus">+</span></summary>
-        <div class="ans">Your website and domain are live on day one, and you’ll see Jed’s work in your feed every single day. Rankings compound: most local businesses start seeing movement in 4 to 8 weeks, with the big gains building over months. That’s why Jed ships one growth action daily: local SEO is won by showing up every day, not by a one-time setup.</div>
+        <div class="ans">Your website and domain are live on day one, and you’ll see Jed’s work in your feed every single day. Rankings compound: the first movement shows in 4 to 8 weeks, and the big gains build over months. That’s why Jed ships one growth action daily: local SEO is won by showing up every day, not by a one-time setup.</div>
       </details>
       <details>
         <summary>What if I already have a website?<span class="plus">+</span></summary>
@@ -884,6 +891,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line-soft);margin-top:120p
         <a href="mailto:hello@jed.so">Contact</a>
       </div>
     </div>
+    <div class="foot-punch">Jed does the marketing.<br>You <span class="accent">answer the phone</span>.</div>
     <div class="foot-bottom">© 2026 DS Maker LTD · jed.so</div>
   </div>
 </footer>
